@@ -112,23 +112,6 @@ footer {
 
 /* How to make First Name and Last Name inline but responsive, so at the md breakpoint they move to their own column? */
 
-/* .row-1 {
-    width: 100%;
-} */
-
-/* .form-group-1 {
-    width: 50%;
-}
-
-.form-group-2 {
-    width: 50%;
-}
-
-@media (max-width: 720px;) {
-    .form-group-1, .form-group-2 {
-        width: 100%;
-    }
-} */
 
 .form-group-3 {
     padding-top: 10px;
