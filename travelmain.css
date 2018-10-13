@@ -1,0 +1,242 @@
+/* index.html */
+
+.navbar-nav {
+    width: 100%;
+}
+
+h1, h2 {
+    font-family: "Oxygen", sans-serif;
+}
+
+p {
+    font-family: "Lora", serif;
+}
+
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/sven-scheuermeier-178631-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+}
+
+.display-4, .lead {
+    color: white;
+    position: relative;
+    top: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 720px) {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+hr {
+    border: .5px solid grey;
+}
+footer {
+    padding-top: 30px;
+}
+
+
+/* gallery */
+
+.gallery-header {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 50px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+@media (max-width: 960px) {
+    .gallery {
+        display: grid;
+        grid-template: repeat(3, 1fr) / 1fr;
+    }
+}
+
+
+/* contact */
+
+.jumbotron-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/sven-scheuermeier-178631-unsplash.jpg");
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+}
+
+.display-5 {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 120px;
+}
+
+.contactform {
+    width: 85%;
+    padding: 30px;
+    /* margin: 0 auto helpful for centering things */
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-family: "Oxygen", sans-serif;
+}
+
+.form-group-1 {
+    width: 100%;
+}
+
+.form-group-2 {
+    width: 100%;
+}
+
+/* How to make First Name and Last Name inline but responsive, so at the md breakpoint they move to their own column? */
+
+/* .row-1 {
+    width: 100%;
+} */
+
+/* .form-group-1 {
+    width: 50%;
+}
+
+.form-group-2 {
+    width: 50%;
+}
+
+@media (max-width: 720px;) {
+    .form-group-1, .form-group-2 {
+        width: 100%;
+    }
+} */
+
+.form-group-3 {
+    padding-top: 10px;
+}
+
+/* article */
+
+.art-header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.img-grid {
+    display: grid;
+    grid-template: 1fr / repeat(3, 3fr);
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+
+.img-grid img {
+    width: 100%;
+}
+/* Really the only good way to get images to be the same size is to resize in Photoshop, don't spend time trying to resize in html/css */
+
+.img-text {
+    background-color: white;
+    width: 75%;
+    position: relative;
+    bottom: 40px;
+    left: 40px;
+    border-left: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px;
+}
+
+@media (max-width: 720px) {
+    .img-grid {
+        display: grid;
+        grid-template: 3fr / 1fr;
+    }
+}
+
+.searchform {
+    background-color: lightgrey;
+    padding: 10px;
+    font-family: "Oxygen", sans-serif;
+}
+
+.article-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.art-1-items {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.repair-survey {
+    font-family: "Oxygen", sans-serif;
+    background-color: rgb(194, 221, 229);
+    padding: 30px;
+    border-radius: 10px;
+    margin-right: 50px;
+    flex: 0 0 360px;
+    /* not great with adjusting columns within flexbox: how do you adjust the amount of space each item takes up? flex-grow/shrink wasn't working. */
+}
+
+@media (max-width: 720px) {
+    .art-1-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.art-2-items {
+    padding-top: 20px;
+}
+
+#pullquote {
+    font-family: "Oxygen", sans-serif;
+    font-size: 36px;
+    color: rgb(0, 136, 146);
+    padding: 20px;
+}
+
+.art-3-items {
+    display: grid;
+    grid-template: 1fr / 5fr 7fr;
+    grid-gap: 20px;
+    padding-top: 20px;
+}
+
+.art-3-items img {
+    width: 100%;
+}
+
+@media (max-width: 720px) {
+    .art-3-items {
+        display: grid;
+        grid-template: 1fr / 1fr;
+    }
+}
+
+.art-hr {
+    border: .5px solid grey;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
